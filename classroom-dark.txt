@@ -1,0 +1,291 @@
+[uBlock Origin Filters]
+! Google Classroom Dark Mode - Cool Modern Theme
+! Installation: Copy this entire filter list into uBlock Origin's "My filters" tab
+! or create a new filter list and add this file's content
+
+! ==================== COLOR SCHEME ====================
+! Dark theme injection via CSS
+classroom.google.com##:style(                                                \
+    :root {                                                                   \
+        --bg-primary: #0f0f0f !important;                                    \
+        --bg-secondary: #1a1a1a !important;                                  \
+        --bg-tertiary: #242424 !important;                                   \
+        --bg-hover: #2d2d2d !important;                                      \
+        --text-primary: #e8e8e8 !important;                                  \
+        --text-secondary: #b0b0b0 !important;                                \
+        --accent-blue: #5b9df9 !important;                                   \
+        --accent-blue-hover: #7aacff !important;                             \
+        --border-color: #333333 !important;                                  \
+        --shadow: rgba(0, 0, 0, 0.5) !important;                             \
+    }                                                                         \
+)
+
+! ==================== GLOBAL STYLES ====================
+! Main background
+classroom.google.com##html:style( \
+    background: linear-gradient(135deg, #0f0f0f 0%, #1a1a2e 100%) !important; \
+)
+
+! Body dark theme
+classroom.google.com##body:style( \
+    background-color: #0f0f0f !important; \
+    color: #e8e8e8 !important; \
+)
+
+! ==================== HEADERS & NAVIGATION ====================
+! Header styling
+classroom.google.com##header:style( \
+    background: linear-gradient(90deg, #1a1a1a 0%, #242424 100%) !important; \
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5) !important; \
+)
+
+! Sidebar
+classroom.google.com##nav:style( \
+    background: #1a1a1a !important; \
+    border-right: 1px solid #333333 !important; \
+)
+
+! ==================== MAIN CONTENT ====================
+! Cards and containers
+classroom.google.com##.nSLjCb:style( \
+    background: #1a1a1a !important; \
+    border: 1px solid #333333 !important; \
+    border-radius: 12px !important; \
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important; \
+)
+
+classroom.google.com##.nSLjCb:hover:style( \
+    background: #242424 !important; \
+    box-shadow: 0 8px 24px rgba(91, 157, 249, 0.15) !important; \
+    transform: translateY(-2px) !important; \
+)
+
+! Assignment cards
+classroom.google.com##.W3tAMb:style( \
+    background: linear-gradient(135deg, #1a1a1a 0%, #242424 100%) !important; \
+    border-left: 4px solid #5b9df9 !important; \
+    border-radius: 12px !important; \
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important; \
+)
+
+classroom.google.com##.W3tAMb:hover:style( \
+    background: #2d2d2d !important; \
+    box-shadow: 0 8px 24px rgba(91, 157, 249, 0.2) !important; \
+)
+
+! Class cards
+classroom.google.com##.kBzqhe:style( \
+    background: linear-gradient(135deg, #1a1a1a 0%, #242424 100%) !important; \
+    box-shadow: 0 4px 12px rgba(91, 157, 249, 0.1) !important; \
+    border-radius: 12px !important; \
+)
+
+! ==================== BUTTONS ====================
+! Primary buttons
+classroom.google.com##button:style( \
+    background: linear-gradient(135deg, #5b9df9 0%, #4a8fe7 100%) !important; \
+    color: #ffffff !important; \
+    border: none !important; \
+    border-radius: 8px !important; \
+    font-weight: 600 !important; \
+    box-shadow: 0 4px 12px rgba(91, 157, 249, 0.3) !important; \
+)
+
+classroom.google.com##button:hover:style( \
+    background: linear-gradient(135deg, #7aacff 0%, #5a9ef7 100%) !important; \
+    box-shadow: 0 6px 20px rgba(91, 157, 249, 0.4) !important; \
+)
+
+! Google Material buttons
+classroom.google.com##.VfPpkd-LgbsSe:style( \
+    background: linear-gradient(135deg, #5b9df9 0%, #4a8fe7 100%) !important; \
+    color: #ffffff !important; \
+    border: none !important; \
+    border-radius: 8px !important; \
+)
+
+classroom.google.com##.VfPpkd-LgbsSe:hover:style( \
+    background: linear-gradient(135deg, #7aacff 0%, #5a9ef7 100%) !important; \
+)
+
+! ==================== TEXT & TYPOGRAPHY ====================
+! Primary text
+classroom.google.com##p:style(color: #e8e8e8 !important;)
+classroom.google.com##span:style(color: #e8e8e8 !important;)
+classroom.google.com##h1:style(color: #e8e8e8 !important;)
+classroom.google.com##h2:style(color: #e8e8e8 !important;)
+classroom.google.com##h3:style(color: #e8e8e8 !important;)
+classroom.google.com##h4:style(color: #e8e8e8 !important;)
+classroom.google.com##h5:style(color: #e8e8e8 !important;)
+classroom.google.com##h6:style(color: #e8e8e8 !important;)
+
+! Secondary text
+classroom.google.com##.lUpr2b:style(color: #b0b0b0 !important;)
+
+! ==================== LINKS ====================
+! Link styling
+classroom.google.com##a:style( \
+    color: #5b9df9 !important; \
+    text-decoration: none !important; \
+)
+
+classroom.google.com##a:hover:style( \
+    color: #7aacff !important; \
+    text-decoration: underline !important; \
+)
+
+! ==================== INPUT FIELDS ====================
+! Input boxes
+classroom.google.com##input:style( \
+    background: #242424 !important; \
+    color: #e8e8e8 !important; \
+    border: 1px solid #333333 !important; \
+    border-radius: 8px !important; \
+    padding: 10px 12px !important; \
+)
+
+classroom.google.com##input:focus:style( \
+    border-color: #5b9df9 !important; \
+    box-shadow: 0 0 0 3px rgba(91, 157, 249, 0.15) !important; \
+)
+
+! Textareas
+classroom.google.com##textarea:style( \
+    background: #242424 !important; \
+    color: #e8e8e8 !important; \
+    border: 1px solid #333333 !important; \
+    border-radius: 8px !important; \
+    padding: 10px 12px !important; \
+)
+
+classroom.google.com##textarea:focus:style( \
+    border-color: #5b9df9 !important; \
+    box-shadow: 0 0 0 3px rgba(91, 157, 249, 0.15) !important; \
+)
+
+! ==================== DROPDOWNS & SELECT ====================
+classroom.google.com##select:style( \
+    background: #242424 !important; \
+    color: #e8e8e8 !important; \
+    border: 1px solid #333333 !important; \
+    border-radius: 8px !important; \
+)
+
+! ==================== MODALS & DIALOGS ====================
+classroom.google.com##[role="dialog"]:style( \
+    background: #1a1a1a !important; \
+    border: 1px solid #333333 !important; \
+    border-radius: 12px !important; \
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5) !important; \
+)
+
+! ==================== STATUS BADGES ====================
+classroom.google.com##[class*="badge"]:style( \
+    background: rgba(91, 157, 249, 0.2) !important; \
+    color: #5b9df9 !important; \
+    border-radius: 20px !important; \
+)
+
+! ==================== TABLES ====================
+classroom.google.com##table:style( \
+    background: #1a1a1a !important; \
+    border-color: #333333 !important; \
+)
+
+classroom.google.com##tr:style(background: #1a1a1a !important;)
+classroom.google.com##tr:hover:style(background: #242424 !important;)
+classroom.google.com##td:style(border-color: #333333 !important;)
+classroom.google.com##th:style(border-color: #333333 !important;)
+
+! ==================== CODE BLOCKS ====================
+classroom.google.com##code:style( \
+    background: #242424 !important; \
+    color: #7dd3fc !important; \
+    border-radius: 6px !important; \
+    padding: 2px 6px !important; \
+)
+
+classroom.google.com##pre:style( \
+    background: #242424 !important; \
+    color: #7dd3fc !important; \
+    border-radius: 6px !important; \
+    padding: 12px !important; \
+    overflow-x: auto !important; \
+)
+
+! ==================== CLASSROOM SPECIFIC ====================
+! Section headers
+classroom.google.com##.qpAKgf:style( \
+    background: #242424 !important; \
+    border-bottom: 2px solid #5b9df9 !important; \
+)
+
+! Post comments
+classroom.google.com##.sKfxWd:style( \
+    background: #242424 !important; \
+)
+
+! Submission status
+classroom.google.com##.mNJ7Eb:style( \
+    background: rgba(91, 157, 249, 0.1) !important; \
+)
+
+! Due dates (red accent)
+classroom.google.com##.yXK7lf:style(color: #ff6b6b !important;)
+
+! Menu items
+classroom.google.com##.EWp0qd:style(color: #e8e8e8 !important;)
+classroom.google.com##.EWp0qd:hover:style(background: #2d2d2d !important;)
+
+! ==================== SCROLLBARS ====================
+classroom.google.com##::-webkit-scrollbar:style( \
+    width: 10px !important; \
+    height: 10px !important; \
+)
+
+classroom.google.com##::-webkit-scrollbar-track:style( \
+    background: #0f0f0f !important; \
+)
+
+classroom.google.com##::-webkit-scrollbar-thumb:style( \
+    background: #333333 !important; \
+    border-radius: 5px !important; \
+)
+
+classroom.google.com##::-webkit-scrollbar-thumb:hover:style( \
+    background: #b0b0b0 !important; \
+)
+
+! ==================== MISCELLANEOUS ====================
+! Checkboxes
+classroom.google.com##[type="checkbox"]:style(accent-color: #5b9df9 !important;)
+classroom.google.com##[type="radio"]:style(accent-color: #5b9df9 !important;)
+
+! Selection color
+classroom.google.com##::selection:style( \
+    background: rgba(91, 157, 249, 0.3) !important; \
+    color: #e8e8e8 !important; \
+)
+
+! Placeholders
+classroom.google.com##::placeholder:style( \
+    color: #b0b0b0 !important; \
+    opacity: 0.7 !important; \
+)
+
+! Loading spinners
+classroom.google.com##[class*="spinner"]:style( \
+    border-color: #333333 !important; \
+    border-top-color: #5b9df9 !important; \
+)
+
+! Tooltips
+classroom.google.com##[role="tooltip"]:style( \
+    background: #242424 !important; \
+    border: 1px solid #5b9df9 !important; \
+    border-radius: 6px !important; \
+    color: #e8e8e8 !important; \
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important; \
+)
+
+! ==================== END OF FILTER LIST ====================
